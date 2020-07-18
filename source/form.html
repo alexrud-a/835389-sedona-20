@@ -42,6 +42,123 @@
         <section class="main-banner banner">
           <h1 class="banner__title">Sedona</h1>
         </section>
+        <section class="about-section">
+          <div class="about-section__text-block">
+            <h2 class="about-section__title">
+              Оставьте свой отзыв
+            </h2>
+            <p class="about-section__text">
+              Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+            </p>
+          </div>
+        </section>
+        <section class="feedback">
+          <form action="https://echo.htmlacademy.ru" method="post" id="feedback-form" class="feedback__form">
+            <div class="feedback__block">
+              <h2 class="feedback__title">
+                Представьтесь
+              </h2>
+              <div class="feedback__form-control">
+                <label for="first-name" class="feedback__label">
+                  Имя*:
+                </label>
+                <input type="text" id="first-name" name="first-name" class="feedback__input" placeholder="Петр" required>
+              </div>
+              <div class="feedback__form-control">
+                <label for="last-name" class="feedback__label">
+                  Фамилия*:
+                </label>
+                <input type="text" id="last-name" name="last-name" class="feedback__input" placeholder="Иванов" required>
+              </div>
+              <div class="feedback__form-control">
+                <label for="middle-name" class="feedback__label">
+                  Фамилия*:
+                </label>
+                <input type="text" id="middle-name" name="middle-name" class="feedback__input" placeholder="Александрович" required>
+              </div>
+            </div>
+            <div class="feedback__block">
+              <h2 class="feedback__title">
+                Контактная информация
+              </h2>
+              <div class="feedback__form-control">
+                <label for="phone-number" class="feedback__label feedback__label--block">
+                  Контактный телефон*:
+                </label>
+                <input type="tel" id="phone-number" name="phone-number" class="feedback__input" placeholder="Введите телефон" required>
+              </div>
+              <div class="feedback__form-control">
+                <label for="email" class="feedback__label feedback__label--block">
+                  Электронная почта*:
+                </label>
+                <input type="email" id="email" name="email" class="feedback__input" placeholder="Введите e-mail" required>
+              </div>
+            </div>
+            <div class="feedback__block">
+              <h2 class="feedback__title">
+                Ваше общее впечатление
+              </h2>
+              <div class="feedback__form-control">
+                <input type="radio" id="good" name="impression" value="Положительное" class="feedback__radio-inp">
+                <label for="good" class="feedback__label feedback__label--radio">
+                  Скорее положительное
+                </label>
+              </div>
+              <div class="feedback__form-control">
+                <input type="radio" id="bad" name="impression" value="Отрицательное" class="feedback__radio-inp">
+                <label for="bad" class="feedback__label feedback__label--radio">
+                  Скорее отрицательное
+                </label>
+              </div>
+              <div class="feedback__form-control">
+                <input type="radio" id="undefined" name="impression" value="Затрудняюсь ответить" class="feedback__radio-inp">
+                <label for="undefined" class="feedback__label feedback__label--radio">
+                  Затрудняюсь ответить
+                </label>
+              </div>
+            </div>
+            <div class="feedback__block">
+              <h2 class="feedback__title">
+                Посещенные достопримечательности
+              </h2>
+              <div class="feedback__form-control">
+                <input type="checkbox" id="bridge" name="place" value="Мост дьявола" class="feedback__check-inp">
+                <label for="bridge" class="feedback__label feedback__label--check">
+                  Мост дьявола
+                </label>
+              </div>
+              <div class="feedback__form-control">
+                <input type="checkbox" id="mountain" name="place" value="Гора-Колокол" class="feedback__check-inp">
+                <label for="mountain" class="feedback__label feedback__label--check">
+                  Гора-Колокол
+                </label>
+              </div>
+              <div class="feedback__form-control">
+                <input type="checkbox" id="park" name="place" value="Слайд-парк" class="feedback__check-inp">
+                <label for="park" class="feedback__label feedback__label--check">
+                  Слайд-парк
+                </label>
+              </div>
+              <div class="feedback__form-control">
+                <input type="checkbox" id="rocks" name="place" value="Красные скалы" class="feedback__check-inp">
+                <label for="rocks" class="feedback__label feedback__label--check">
+                  Красные скалы
+                </label>
+              </div>
+            </div>
+            <div class="feedback__block">
+              <h2 class="feedback__title">
+                Опишите свои эмоции:
+              </h2>
+              <div class="feedback__form-control">
+                <textarea class="feedback__textarea" name="feedback-text" placeholder="Опишите подробно все свои восторги"></textarea>
+              </div>
+              <div class="feedback__form-control">
+                <input type="submit" value="Отправить отзыв">
+              </div>
+            </div>
+          </form>
+        </section>
       </main>
       <footer class="page-footer">
         <div class="footer-hashtag hashtag">
