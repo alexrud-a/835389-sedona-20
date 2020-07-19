@@ -99,19 +99,19 @@
                 Ваше общее впечатление
               </h2>
               <div class="feedback__form-control">
-                <input type="radio" id="good" name="impression" value="Положительное" class="feedback__radio-inp">
+                <input type="radio" id="good" name="impression" value="Положительное" class="feedback__radio">
                 <label for="good" class="feedback__label feedback__label--radio">
                   Скорее положительное
                 </label>
               </div>
               <div class="feedback__form-control">
-                <input type="radio" id="bad" name="impression" value="Отрицательное" class="feedback__radio-inp">
+                <input type="radio" id="bad" name="impression" value="Отрицательное" class="feedback__radio">
                 <label for="bad" class="feedback__label feedback__label--radio">
                   Скорее отрицательное
                 </label>
               </div>
               <div class="feedback__form-control">
-                <input type="radio" id="undefined" name="impression" value="Затрудняюсь ответить" class="feedback__radio-inp">
+                <input type="radio" id="undefined" name="impression" value="Затрудняюсь ответить" class="feedback__radio">
                 <label for="undefined" class="feedback__label feedback__label--radio">
                   Затрудняюсь ответить
                 </label>
@@ -122,40 +122,36 @@
                 Посещенные достопримечательности
               </h2>
               <div class="feedback__form-control">
-                <input type="checkbox" id="bridge" name="place" value="Мост дьявола" class="feedback__check-inp">
+                <input type="checkbox" id="bridge" name="place" value="Мост дьявола" class="feedback__check">
                 <label for="bridge" class="feedback__label feedback__label--check">
                   Мост дьявола
                 </label>
               </div>
               <div class="feedback__form-control">
-                <input type="checkbox" id="mountain" name="place" value="Гора-Колокол" class="feedback__check-inp">
+                <input type="checkbox" id="mountain" name="place" value="Гора-Колокол" class="feedback__check">
                 <label for="mountain" class="feedback__label feedback__label--check">
                   Гора-Колокол
                 </label>
               </div>
               <div class="feedback__form-control">
-                <input type="checkbox" id="park" name="place" value="Слайд-парк" class="feedback__check-inp">
+                <input type="checkbox" id="park" name="place" value="Слайд-парк" class="feedback__check">
                 <label for="park" class="feedback__label feedback__label--check">
                   Слайд-парк
                 </label>
               </div>
               <div class="feedback__form-control">
-                <input type="checkbox" id="rocks" name="place" value="Красные скалы" class="feedback__check-inp">
+                <input type="checkbox" id="rocks" name="place" value="Красные скалы" class="feedback__check">
                 <label for="rocks" class="feedback__label feedback__label--check">
                   Красные скалы
                 </label>
               </div>
             </div>
             <div class="feedback__block">
-              <h2 class="feedback__title">
+              <label for="feedback-text" class="feedback__title">
                 Опишите свои эмоции:
-              </h2>
-              <div class="feedback__form-control">
-                <textarea class="feedback__textarea" name="feedback-text" placeholder="Опишите подробно все свои восторги"></textarea>
-              </div>
-              <div class="feedback__form-control">
-                <input type="submit" value="Отправить отзыв">
-              </div>
+              </label>
+              <textarea class="feedback__textarea" id="feedback-text" name="feedback-text" placeholder="Опишите подробно все свои восторги"></textarea>
+              <button type="submit" class="feedback__submit">Отправить отзыв</button>
             </div>
           </form>
         </section>
