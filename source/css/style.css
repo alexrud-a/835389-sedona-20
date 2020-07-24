@@ -306,7 +306,7 @@ template {
 
 @font-face {
   font-family: "PT Sans";
-  src: url("/fonts/ptsans.woff") format("woff"), url("/fonts/ptsans.woff2") format("woff2"), url("/fonts/ptsansbold.woff") format("woff"), url("/fonts/ptsansbold.woff2") format("woff2"); }
+  src: url("fonts/ptsans.woff") format("woff"), url("fonts/ptsans.woff2") format("woff2"), url("fonts/ptsansbold.woff") format("woff"), url("fonts/ptsansbold.woff2") format("woff2"); }
 
 .page {
   font-family: "PT Sans", "Arial", sans-serif;
