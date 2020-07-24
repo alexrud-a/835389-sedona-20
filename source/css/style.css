@@ -325,7 +325,7 @@ template {
   display: none; }
 
 .banner {
-  background: url("/img/main-bridge-mobile@1x.jpg") no-repeat center center;
+  background: url("img/main-bridge-mobile@1x.jpg") no-repeat center center;
   background-size: cover;
   height: 390px;
   color: #ffffff; }
@@ -341,7 +341,7 @@ template {
   .advantage__item--accent {
     background: #81b3d2;
     color: #ffffff; }
-    .advantage__item--accent .about-section__title {
+    .advantage__item--accent .title {
       color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
