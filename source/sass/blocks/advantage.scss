@@ -1,0 +1,10 @@
+.advantage__item {
+  background: #EEEEEE;
+  &--accent {
+    background: $blue;
+    color: #fff;
+    .advantage__item-title {
+      color: #ffffff;
+    }
+  }
+}
