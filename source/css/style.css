@@ -306,7 +306,7 @@ template {
 
 @font-face {
   font-family: "PT Sans";
-  src: url("fonts/ptsans.woff") format("woff"), url("fonts/ptsans.woff2") format("woff2"), url("fonts/ptsansbold.woff") format("woff"), url("fonts/ptsansbold.woff2") format("woff2"); }
+  src: url("source/fonts/ptsans.woff") format("woff"), url("source/fonts/ptsans.woff2") format("woff2"), url("source/fonts/ptsansbold.woff") format("woff"), url("source/fonts/ptsansbold.woff2") format("woff2"); }
 
 .page {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -325,7 +325,7 @@ template {
   display: none; }
 
 .banner {
-  background: url("img/main-bridge-mobile@1x.jpg") no-repeat center center;
+  background: url("source/img/main-bridge-mobile@1x.jpg") no-repeat center center;
   background-size: cover;
   height: 390px;
   color: #ffffff; }
