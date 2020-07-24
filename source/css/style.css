@@ -316,7 +316,8 @@ template {
 .title {
   font-size: 18px;
   color: #000000;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .text {
   text-transform: uppercase; }
