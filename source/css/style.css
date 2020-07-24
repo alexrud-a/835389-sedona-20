@@ -341,7 +341,7 @@ template {
   .advantage__item--accent {
     background: #81b3d2;
     color: #ffffff; }
-    .advantage__item--accent-title {
+    .advantage__item--accent .about-section__title {
       color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
