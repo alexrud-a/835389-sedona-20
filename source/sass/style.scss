@@ -1,8 +1,9 @@
-@import "node_modules/normalize.css/normalize";
+@import "../node_modules/normalize.css/normalize";
 @import "variables";
 @import "fonts";
 @import "base";
 @import "blocks/header";
+@import "blocks/nav";
 @import "blocks/banner";
-@import "blocks/about";
+@import "blocks/about-section";
 @import "blocks/advantage";
