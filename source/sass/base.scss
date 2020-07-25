@@ -1,0 +1,24 @@
+.page {
+  font-family: $font;
+  color: $text-color;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 18px;
+  color: $title-color;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.text {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}

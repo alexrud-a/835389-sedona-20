@@ -1,0 +1,13 @@
+.advantage__item {
+  background: #eeeeee;
+  padding: 40px 20px;
+
+  &--accent {
+    background: $blue;
+    color: #ffffff;
+  }
+}
+
+.advantage__item-title--white {
+  color: #ffffff;
+}
