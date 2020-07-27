@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -304,6 +305,7 @@ template {
 [hidden] {
   display: none; }
 
+/*через путь ../node_modules появляется ошибка и перестает работать сборка*/
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
@@ -316,6 +318,9 @@ template {
   font-weight: bold;
   font-style: normal; }
 
+body {
+  min-width: 320px; }
+
 .page {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #333333;
@@ -325,7 +330,8 @@ template {
   font-size: 18px;
   color: #000000;
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
 .text {
   text-transform: uppercase; }
@@ -335,6 +341,18 @@ a {
 
 img {
   max-width: 100%; }
+
+.btn {
+  display: block;
+  background-color: #81b3d2;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  border: none; }
 
 .header {
   background-color: #ffffff; }
@@ -353,6 +371,9 @@ img {
 .about-section {
   padding: 20px; }
 
+.about-section__text-block {
+  text-align: center; }
+
 .advantage__item {
   background: #eeeeee;
   padding: 40px 20px; }
@@ -362,5 +383,99 @@ img {
 
 .advantage__item-title--white {
   color: #ffffff; }
+
+.interested {
+  text-align: center; }
+
+.interested__wrap {
+  padding: 30px 30px 50px; }
+
+.interested__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000; }
+
+.interested__desc {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px; }
+
+.interested__map {
+  width: 100%;
+  height: 350px;
+  background: url("../img/bg-map-mobile@1x.jpg") no-repeat center center;
+  background-size: cover; }
+
+.player__video {
+  height: 201px;
+  width: 100%;
+  background: url("../img/video-mobile@1x.jpg") no-repeat center center;
+  background-size: cover; }
+
+.feedback__form {
+  box-sizing: border-box;
+  width: 100%; }
+
+.feedback__block {
+  padding: 20px 20px 25px;
+  border-top: 1px solid #e5e5e5; }
+
+.feedback__label {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase; }
+
+.feedback__input {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  background: #f2f2f2;
+  padding: 15px 20px;
+  border-color: transparent;
+  border-radius: 0;
+  box-sizing: border-box; }
+  .feedback__input::-webkit-input-placeholder {
+    color: #000000; }
+  .feedback__input:-moz-placeholder {
+    color: #000000; }
+  .feedback__input:focus {
+    outline: none; }
+
+.feedback__form-control {
+  margin: 20px 0; }
+
+.feedback__textarea {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  background: #f2f2f2;
+  padding: 15px 20px;
+  border-color: transparent;
+  border-radius: 0;
+  margin: 15px 0 50px;
+  width: 100%;
+  height: 160px;
+  box-sizing: border-box; }
+  .feedback__textarea::-webkit-input-placeholder {
+    color: #000000; }
+  .feedback__textarea:-moz-placeholder {
+    color: #000000; }
+  .feedback__textarea:focus {
+    outline: none; }
+
+.footer {
+  padding: 40px 30px;
+  text-align: center; }
+
+.footer__hashtag {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000; }
 
 /*# sourceMappingURL=style.css.map */
