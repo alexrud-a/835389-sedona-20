@@ -56,15 +56,15 @@
   height: 160px;
   box-sizing: border-box;
 
-    &::-webkit-input-placeholder {
-      color: #000000;
-    }
+  &::-webkit-input-placeholder {
+    color: #000000;
+  }
 
-    &:-moz-placeholder {
-      color: #000000;
-    }
+  &:-moz-placeholder {
+    color: #000000;
+  }
 
-    &:focus {
-      outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 }
