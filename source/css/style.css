@@ -720,6 +720,11 @@ img {
 .footer {
   padding: 40px 30px;
   text-align: center; }
+  @media screen and (min-width: 768px) {
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; } }
 
 .footer__hashtag {
   font-weight: bold;

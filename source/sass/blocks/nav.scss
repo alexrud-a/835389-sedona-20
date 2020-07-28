@@ -12,7 +12,7 @@
   right: 16px;
   top: 15px;
 
-  @media screen and (min-width:$tablet) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
@@ -81,7 +81,7 @@
   list-style: none;
   text-align: center;
 
-  @media screen and (min-width:$tablet) {
+  @media screen and (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
@@ -106,7 +106,7 @@
   padding: 10px 10px 6px;
   background-color: $blue;
 
-  @media screen and (min-width:$tablet) {
+  @media screen and (min-width: $tablet) {
     background-color: $white;
     color: $black;
     box-shadow: none;
