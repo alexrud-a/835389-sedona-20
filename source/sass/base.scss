@@ -4,13 +4,13 @@ body {
 
 .page {
   font-family: $font;
-  color: $text-color;
+  color: $dark;
   font-size: 14px;
 }
 
 .title {
   font-size: 18px;
-  color: $title-color;
+  color: $black;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
@@ -28,15 +28,6 @@ img {
   max-width: 100%;
 }
 
-.btn {
-  display: block;
-  background-color: $blue;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  text-align: center;
-  padding: 15px 30px;
-  text-transform: uppercase;
-  border: none;
+.hidden {
+  display: none;
 }

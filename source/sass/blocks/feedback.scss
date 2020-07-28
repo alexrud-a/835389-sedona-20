@@ -18,19 +18,19 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  color: #000000;
-  background: #f2f2f2;
+  color: $black;
+  background-color: #f2f2f2;
   padding: 15px 20px;
   border-color: transparent;
   border-radius: 0;
   box-sizing: border-box;
 
   &::-webkit-input-placeholder {
-    color: #000000;
+    color: $black;
   }
 
   &:-moz-placeholder {
-    color: #000000;
+    color: $black;
   }
 
   &:focus {
@@ -46,8 +46,8 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  color: #000000;
-  background: #f2f2f2;
+  color: $black;
+  background-color: #f2f2f2;
   padding: 15px 20px;
   border-color: transparent;
   border-radius: 0;
@@ -57,11 +57,11 @@
   box-sizing: border-box;
 
   &::-webkit-input-placeholder {
-    color: #000000;
+    color: $black;
   }
 
   &:-moz-placeholder {
-    color: #000000;
+    color: $black;
   }
 
   &:focus {

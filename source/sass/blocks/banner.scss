@@ -2,7 +2,8 @@
   background: url("../img/main-bridge-mobile@1x.jpg") no-repeat center center;
   background-size: cover;
   height: 390px;
-  color: #ffffff;
+  color: $white;
+  padding: 20px;
 
   &--page {
     height: 160px;

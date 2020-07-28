@@ -8,5 +8,23 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
+}
+
+.footer-social {
+  margin: 30px auto 45px;
+}
+
+.footer-develop__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-develop__text {
+  font-size: 14px;
+  line-height: 26px;
+  color: $black;
+  text-transform: uppercase;
+  margin-right: 10px;
 }
