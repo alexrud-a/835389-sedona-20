@@ -1,0 +1,28 @@
+.interested {
+  text-align: center;
+}
+
+.interested__wrap {
+  padding: 30px 30px 50px;
+}
+
+.interested__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: $black;
+}
+
+.interested__desc {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.interested__map {
+  width: 100%;
+  height: 350px;
+  background: url("../img/bg-map-mobile@1x.jpg") no-repeat center center;
+  background-size: cover;
+}

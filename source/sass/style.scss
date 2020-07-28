@@ -1,4 +1,4 @@
-@import "../node_modules/normalize.css/normalize";
+@import "node_modules/normalize.css/normalize";
 @import "variables";
 @import "fonts";
 @import "base";
@@ -7,3 +7,8 @@
 @import "blocks/banner";
 @import "blocks/about-section";
 @import "blocks/advantage";
+@import "blocks/interested";
+@import "blocks/player";
+@import "blocks/feedback";
+@import "blocks/btn";
+@import "blocks/footer";

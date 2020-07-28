@@ -1,0 +1,30 @@
+.footer {
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.footer__hashtag {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.footer-social {
+  margin: 30px auto 45px;
+}
+
+.footer-develop__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-develop__text {
+  font-size: 14px;
+  line-height: 26px;
+  color: $black;
+  text-transform: uppercase;
+  margin-right: 10px;
+}

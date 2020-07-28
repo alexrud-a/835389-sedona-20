@@ -1,14 +1,19 @@
+body {
+  min-width: 320px;
+}
+
 .page {
   font-family: $font;
-  color: $text-color;
+  color: $dark;
   font-size: 14px;
 }
 
 .title {
   font-size: 18px;
-  color: $title-color;
+  color: $black;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
 }
 
 .text {
@@ -21,4 +26,8 @@ a {
 
 img {
   max-width: 100%;
+}
+
+.hidden {
+  display: none;
 }

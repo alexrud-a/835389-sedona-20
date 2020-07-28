@@ -15,7 +15,9 @@
           </a>
         </div>
         <div class="header__nav nav">
-          <button class="nav__toogle nav__toogle--close">Меню</button>
+          <button class="nav__toogle nav__toogle--open">
+            <span>Меню</span>
+          </button>
           <div class="nav__menu-wrap">
             <ul class="nav__menu-list">
               <li class="nav__menu-item">
@@ -44,14 +46,15 @@
       </header>
       <main class="main">
         <section class="page-banner banner banner--page">
-          <h1 class="banner__title">Sedona</h1>
+          <h1 class="hidden">Sedona</h1>
+          <img src="img/text-sedona.svg">
         </section>
         <section class="about-section">
           <div class="about-section__text-block">
             <h2 class="title about-section__title">
               Оставьте свой отзыв
             </h2>
-            <p class="about-section__text">
+            <p class="text about-section__text">
               Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
             </p>
           </div>
@@ -59,7 +62,7 @@
         <section class="feedback">
           <form action="https://echo.htmlacademy.ru" method="post" id="feedback-form" class="feedback__form">
             <div class="feedback__block">
-              <h2 class="feedback__title">
+              <h2 class="title feedback__title">
                 Представьтесь
               </h2>
               <div class="feedback__form-control">
@@ -82,7 +85,7 @@
               </div>
             </div>
             <div class="feedback__block">
-              <h2 class="feedback__title">
+              <h2 class="title feedback__title">
                 Контактная информация
               </h2>
               <div class="feedback__form-control">
@@ -99,7 +102,7 @@
               </div>
             </div>
             <div class="feedback__block">
-              <h2 class="feedback__title">
+              <h2 class="title feedback__title">
                 Ваше общее впечатление
               </h2>
               <div class="feedback__form-control">
@@ -122,7 +125,7 @@
               </div>
             </div>
             <div class="feedback__block">
-              <h2 class="feedback__title">
+              <h2 class="title feedback__title">
                 Посещенные достопримечательности
               </h2>
               <div class="feedback__form-control">
@@ -151,17 +154,17 @@
               </div>
             </div>
             <div class="feedback__block">
-              <label for="feedback-text" class="feedback__title">
+              <label for="feedback-text" class="title feedback__title">
                 Опишите свои эмоции:
               </label>
               <textarea class="feedback__textarea" id="feedback-text" name="feedback-text" placeholder="Опишите подробно все свои восторги"></textarea>
-              <button type="submit" class="feedback__submit">Отправить отзыв</button>
+              <button type="submit" class="btn feedback__submit">Отправить отзыв</button>
             </div>
           </form>
         </section>
       </main>
-      <footer class="page-footer">
-        <div class="footer-hashtag hashtag">
+      <footer class="page-footer footer">
+        <div class="footer__hashtag hashtag">
           #visitsedona
         </div>
         <div class="footer-social social">
@@ -181,10 +184,10 @@
             </a>
           </div>
         </div>
-        <div class="footer-develop develop">
-          <a href="#" class="develop__block">
-            <span class="develop__text">Разработано</span>
-            <img class="develop__logo" src="img/logo-htmlacademy.svg" alt="" title="">
+        <div class="footer-develop">
+          <a href="#" class="footer-develop__block">
+            <span class="footer-develop__text">Разработано</span>
+            <img class="footer-develop__logo" src="img/logo-htmlacademy.svg" alt="" title="">
           </a>
         </div>
       </footer>
