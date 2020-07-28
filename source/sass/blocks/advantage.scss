@@ -64,16 +64,13 @@
 }
 
 .advantage__icon-text {
+  line-height: 21px;
   flex-basis: calc(100% - 50px);
 }
 
 .advantage__icon-title {
   margin: 10px 0;
   text-align: left;
-}
-
-.advantage__icon-text {
-  line-height: 21px;
 }
 
 .advantage__item-img {

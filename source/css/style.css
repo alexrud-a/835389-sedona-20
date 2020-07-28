@@ -544,14 +544,12 @@ img {
   margin-right: 10px; }
 
 .advantage__icon-text {
+  line-height: 21px;
   flex-basis: calc(100% - 50px); }
 
 .advantage__icon-title {
   margin: 10px 0;
   text-align: left; }
-
-.advantage__icon-text {
-  line-height: 21px; }
 
 @media screen and (min-width: 768px) {
   .advantage__item-img {
