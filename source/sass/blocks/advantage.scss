@@ -16,13 +16,13 @@
     }
   }
 
-  &:nth-last-child(2){
+  &:nth-last-child(2) {
     @media screen and (min-width: $tablet) {
       order: 5;
     }
   }
 
-  &:nth-last-child(3){
+  &:nth-last-child(3) {
     @media screen and (min-width: $tablet) {
       order: 4;
     }
@@ -36,7 +36,7 @@
     background: $blue;
     color: $white;
 
-    &:last-child{
+    &:last-child {
       @media screen and (min-width: $tablet) {
         order: 3;
       }
@@ -76,7 +76,7 @@
   line-height: 21px;
 }
 
-.advantage__item-img{
+.advantage__item-img {
   @media screen and (min-width: $tablet) {
     flex-basis: 66.6666%;
   }
