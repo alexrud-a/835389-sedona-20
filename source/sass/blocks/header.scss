@@ -1,7 +1,22 @@
 .header {
   background-color: $white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .header__logo {
   text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -30px; // - пока не вижу другого выхода для мобилки
+  @media screen and (min-width:$tablet) {
+    position: absolute;
+    left: calc(50% - 50px);
+    margin-bottom: 0;
+  }
+}
+
+.header__nav--nojs {
+  order: -1;
 }

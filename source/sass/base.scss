@@ -1,5 +1,6 @@
 body {
   min-width: 320px;
+  background-color: $white;
 }
 
 .page {
@@ -14,10 +15,17 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+  line-height: 26px;
+
+  @media screen and (min-width:$tablet) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .text {
   text-transform: uppercase;
+  line-height: 26px;
 }
 
 a {
@@ -26,6 +34,7 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .hidden {
