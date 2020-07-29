@@ -7,11 +7,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
 
   @media screen and (min-width: $tablet) {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat center center;
     background-size: cover;
     height: 518px;
+    margin-top: 0;
   }
 
   @media screen and (min-width: $desctop) {

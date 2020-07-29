@@ -7,14 +7,14 @@
 
 .header__logo {
   text-align: center;
-  position: relative;
+  position: absolute;
   z-index: 1;
-  margin-bottom: -30px; // - пока не вижу другого выхода для мобилки
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
 
   @media screen and (min-width: $tablet) {
-    position: absolute;
-    left: calc(50% - 50px);
-    margin-bottom: 0;
+    top: 0;
   }
 }
 
