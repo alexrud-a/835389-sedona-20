@@ -1,5 +1,4 @@
 .nav {
-  background-color: $blue;
   position: relative;
 }
 
@@ -12,6 +11,10 @@
   position: absolute;
   right: 16px;
   top: 15px;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .nav__toogle--close {
@@ -77,6 +80,19 @@
   padding: 0;
   list-style: none;
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+.nav__menu-item {
+  &:nth-child(3) {
+    @media screen and (min-width: $tablet) {
+      grid-column: 4;
+    }
+  }
 }
 
 .nav__menu-link {
@@ -88,4 +104,14 @@
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   display: block;
   padding: 10px 10px 6px;
+  background-color: $blue;
+
+  @media screen and (min-width: $tablet) {
+    background-color: $white;
+    color: $black;
+    box-shadow: none;
+    padding: 15px 10px 15px;
+    font-size: 14px;
+    line-height: 26px;
+  }
 }

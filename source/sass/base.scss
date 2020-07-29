@@ -1,23 +1,6 @@
 body {
   min-width: 320px;
-}
-
-.page {
-  font-family: $font;
-  color: $dark;
-  font-size: 14px;
-}
-
-.title {
-  font-size: 18px;
-  color: $black;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-}
-
-.text {
-  text-transform: uppercase;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -26,6 +9,7 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .hidden {

@@ -2,6 +2,9 @@
 @import "variables";
 @import "fonts";
 @import "base";
+@import "blocks/page";
+@import "blocks/title";
+@import "blocks/text";
 @import "blocks/header";
 @import "blocks/nav";
 @import "blocks/banner";
@@ -11,4 +14,5 @@
 @import "blocks/player";
 @import "blocks/feedback";
 @import "blocks/btn";
+@import "blocks/gallery";
 @import "blocks/footer";

@@ -1,11 +1,31 @@
 .banner {
-  background: url("../img/main-bridge-mobile@1x.jpg") no-repeat center center;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center center;
   background-size: cover;
-  height: 390px;
+  height: 350px;
   color: $white;
-  padding: 20px;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+
+  @media screen and (min-width: $tablet) {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center center;
+    background-size: cover;
+    height: 518px;
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: $desctop) {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center center;
+    background-size: cover;
+  }
 
   &--page {
     height: 160px;
+
+    @media screen and (min-width: $tablet) {
+      height: 300px;
+    }
   }
 }

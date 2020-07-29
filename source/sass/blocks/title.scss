@@ -1,0 +1,13 @@
+.title {
+  font-size: 18px;
+  color: $black;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  line-height: 26px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}

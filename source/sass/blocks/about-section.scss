@@ -1,7 +1,12 @@
 .about-section {
-  padding: 20px;
+  padding: 20px 30px;
 }
 
 .about-section__text-block {
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 520px;
+    margin: auto;
+  }
 }
