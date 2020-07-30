@@ -102,11 +102,11 @@
 .feedback__submit {
   width: 100%;
 
-  @media screen and (min-width: $tablet){
+  @media screen and (min-width: $tablet) {
     width: 324px;
   }
 
-  @media screen and (min-width: $desctop){
+  @media screen and (min-width: $desctop) {
     width: 480px;
   }
 }
