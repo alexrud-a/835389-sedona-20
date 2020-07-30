@@ -3,4 +3,16 @@
   width: 100%;
   background: url("../img/video-mobile@1x.jpg") no-repeat center center;
   background-size: cover;
+
+  @media screen and (min-width: $tablet) {
+    background: url("../img/video-tablet@1x.jpg") no-repeat center center;
+    background-size: cover;
+    height: 648px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    background: url("../img/video-desktop@1x.jpg") no-repeat center center;
+    background-size: cover;
+    height: 800px;
+  }
 }

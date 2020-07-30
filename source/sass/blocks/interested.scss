@@ -4,6 +4,12 @@
 
 .interested__wrap {
   padding: 30px 30px 50px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 58px 0;
+    max-width: 458px;
+    margin: 0 auto;
+  }
 }
 
 .interested__title {
@@ -25,4 +31,20 @@
   height: 350px;
   background: url("../img/bg-map-mobile@1x.jpg") no-repeat center center;
   background-size: cover;
+
+  @media screen and (min-width: $tablet) {
+    background: url("../img/bg-map-tablet@1x.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: $desctop) {
+    background: url("../img/bg-map-desktop@1x.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.interested__player {
+  @media screen and (min-width: $tablet) {
+    padding: 0 60px;
+  }
 }
