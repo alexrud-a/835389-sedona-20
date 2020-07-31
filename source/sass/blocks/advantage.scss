@@ -46,6 +46,7 @@
   &--icons {
     @media screen and (min-width: $tablet) {
       flex-basis: 100%;
+      display: flex;
     }
   }
 }
