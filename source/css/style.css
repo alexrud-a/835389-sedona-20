@@ -636,16 +636,16 @@ img {
   border-top: 1px solid #e5e5e5;
   box-sizing: border-box; }
   @media screen and (min-width: 768px) {
-    .feedback__block:first-child {
+    .feedback__block--1 {
       flex-basis: 50%; }
-    .feedback__block:nth-child(2) {
+    .feedback__block--2 {
       flex-basis: 100%; }
-    .feedback__block:nth-child(3) {
+    .feedback__block--3 {
       order: -1;
       flex-basis: 50%; }
-    .feedback__block:nth-child(4) {
+    .feedback__block--4 {
       flex-basis: 100%; }
-    .feedback__block:nth-child(5) {
+    .feedback__block--5 {
       flex-basis: 100%; } }
 
 .feedback__label {
