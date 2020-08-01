@@ -59,6 +59,7 @@
 
     @media screen and (min-width: $tablet) {
       flex-basis: 100%;
+      display: flex;
     }
   }
 }
@@ -107,13 +108,13 @@
   position: relative;
   display: inline-block;
 
-  &:before {
+  &::before {
     position: absolute;
     content: "—";
     left: -15px;
   }
 
-  &:after {
+  &::after {
     position: absolute;
     content: "—";
     right: -15px;
