@@ -8,17 +8,38 @@
   justify-content: center;
   align-items: center;
   margin-top: 54px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center bottom;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 57px;
+    background-size: cover;
+
+    @media screen and (min-width: $tablet) {
+      background: url("../img/bg-intro-triangle-tablet.svg") no-repeat center bottom;
+    }
+
+    @media screen and (min-width: $desctop) {
+      background: url("../img/bg-intro-triangle-desktop.svg") no-repeat center bottom;
+    }
+  }
 
   @media screen and (min-width: $tablet) {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat center center;
     background-size: cover;
-    height: 518px;
+    height: 437px;
     margin-top: 0;
   }
 
   @media screen and (min-width: $desctop) {
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat center center;
     background-size: cover;
+    height: 438px;
   }
 
   &--page {

@@ -1,5 +1,13 @@
 .about-section {
-  padding: 20px 30px;
+  padding: 21px 30px 8px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 36px 30px 40px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding: 45px 30px 30px;
+  }
 }
 
 .about-section__text-block {
@@ -12,5 +20,9 @@
 }
 
 .about-section__text {
-  margin: 33px 0;
+  margin: 33px 0 0;
+
+  @media screen and (min-width: $tablet) {
+    margin: 30px 0 13px;
+  }
 }
