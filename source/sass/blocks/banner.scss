@@ -1,13 +1,13 @@
 .banner {
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center center;
   background-size: cover;
-  height: 350px;
+  height: 310px;
   color: $white;
   padding: 40px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 54px;
 
   @media screen and (min-width: $tablet) {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat center center;

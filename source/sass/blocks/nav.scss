@@ -9,7 +9,7 @@
   width: 23px;
   height: 22px;
   position: absolute;
-  right: 16px;
+  right: 19px;
   top: 15px;
 
   @media screen and (min-width: $tablet) {
@@ -80,6 +80,20 @@
   padding: 0;
   list-style: none;
   text-align: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 7px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
 
   @media screen and (min-width: $tablet) {
     display: grid;

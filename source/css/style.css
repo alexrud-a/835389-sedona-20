@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -344,7 +345,8 @@ img {
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  line-height: 26px; }
+  line-height: 26px;
+  margin: 10px 0; }
   @media screen and (min-width: 768px) {
     .title {
       font-size: 21px;
@@ -384,7 +386,7 @@ img {
   width: 23px;
   height: 22px;
   position: absolute;
-  right: 16px;
+  right: 19px;
   top: 15px; }
   @media screen and (min-width: 768px) {
     .nav__toogle {
@@ -443,6 +445,17 @@ img {
   padding: 0;
   list-style: none;
   text-align: center; }
+  .nav__menu-list::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 7px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%); }
+    @media screen and (min-width: 768px) {
+      .nav__menu-list::before {
+        display: none; } }
   @media screen and (min-width: 768px) {
     .nav__menu-list {
       display: grid;
@@ -474,13 +487,13 @@ img {
 .banner {
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center center;
   background-size: cover;
-  height: 350px;
+  height: 310px;
   color: #ffffff;
   padding: 40px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px; }
+  margin-top: 54px; }
   @media screen and (min-width: 768px) {
     .banner {
       background: url("../img/bg-back-tablet@1x.jpg") no-repeat center center;
@@ -507,6 +520,9 @@ img {
       max-width: 520px;
       margin: auto; } }
 
+.about-section__text {
+  margin: 33px 0; }
+
 @media screen and (min-width: 768px) {
   .advantage {
     display: flex;
@@ -514,8 +530,11 @@ img {
 
 .advantage__item {
   background-color: #eeeeee;
-  padding: 40px 20px;
-  box-sizing: border-box; }
+  padding: 17px 33px;
+  box-sizing: border-box;
+  text-align: center; }
+  .advantage__item:first-child {
+    padding: 25px 14px; }
   @media screen and (min-width: 768px) {
     .advantage__item:nth-last-child(1) {
       order: 6; } }
@@ -530,16 +549,27 @@ img {
       flex-basis: 33.3333%; } }
   .advantage__item--accent {
     background: #81b3d2;
-    color: #ffffff; }
+    color: #ffffff;
+    padding: 34px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     @media screen and (min-width: 768px) {
       .advantage__item--accent:last-child {
         order: 3; } }
-  @media screen and (min-width: 768px) {
-    .advantage__item--icons {
-      flex-basis: 100%; } }
+  .advantage__item--icons {
+    text-align: left;
+    padding: 21px 20px; }
+    @media screen and (min-width: 768px) {
+      .advantage__item--icons {
+        flex-basis: 100%; } }
 
 .advantage__item-title--white {
   color: #ffffff; }
+
+.advantage__item-text {
+  margin: 11px 0; }
 
 .advantage__icon {
   display: flex; }
@@ -550,7 +580,8 @@ img {
 
 .advantage__icon-text {
   line-height: 21px;
-  flex-basis: calc(100% - 50px); }
+  flex-basis: calc(100% - 50px);
+  margin: 7px 0; }
 
 .advantage__icon-title {
   margin: 10px 0;
@@ -563,6 +594,18 @@ img {
 @media screen and (min-width: 768px) {
   .advantage__item-img--last {
     order: 2; } }
+
+.advantage__item-count {
+  position: relative;
+  display: inline-block; }
+  .advantage__item-count:before {
+    position: absolute;
+    content: "—";
+    left: -15px; }
+  .advantage__item-count:after {
+    position: absolute;
+    content: "—";
+    right: -15px; }
 
 .interested {
   text-align: center; }
