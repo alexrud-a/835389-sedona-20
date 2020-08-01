@@ -523,13 +523,14 @@ img {
       background-size: cover;
       height: 438px; } }
   .banner--page {
-    height: 160px; }
+    height: 79px;
+    padding: 34px 46px 45px; }
     @media screen and (min-width: 768px) {
       .banner--page {
         height: 300px; } }
 
 .about-section {
-  padding: 21px 30px 8px; }
+  padding: 21px 20px 8px; }
   @media screen and (min-width: 768px) {
     .about-section {
       padding: 36px 30px 40px; } }

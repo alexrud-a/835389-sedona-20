@@ -43,7 +43,8 @@
   }
 
   &--page {
-    height: 160px;
+    height: 79px;
+    padding: 34px 46px 45px;
 
     @media screen and (min-width: $tablet) {
       height: 300px;
