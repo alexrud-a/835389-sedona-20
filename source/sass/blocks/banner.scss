@@ -1,9 +1,8 @@
 .banner {
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center center;
   background-size: cover;
-  height: 310px;
   color: $white;
-  padding: 40px 20px;
+  padding: 89px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,14 +31,13 @@
   @media screen and (min-width: $tablet) {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat center center;
     background-size: cover;
-    height: 437px;
+    padding: 84px 20px;
     margin-top: 0;
   }
 
   @media screen and (min-width: $desctop) {
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat center center;
     background-size: cover;
-    height: 438px;
   }
 
   &--page {
@@ -47,11 +45,11 @@
     padding: 34px 46px 45px;
 
     @media screen and (min-width: $tablet) {
-      height: 211px;
+      padding: 96px 46px 115px;
     }
 
     @media screen and (min-width: $desctop) {
-      height: 221px;
+      padding: 101px 46px 120px;
     }
   }
 }

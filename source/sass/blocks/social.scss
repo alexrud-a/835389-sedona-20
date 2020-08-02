@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  justify-content: center;
+  font-size: 0;
+}
+
+.social__item-link {
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: $blue;
+  margin: 0 3px;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &--tw {
+    background-image: url("../img/icon-twitter.svg");
+  }
+
+  &--fb {
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &--ytb {
+    background-image: url("../img/icon-youtube.svg");
+  }
+}

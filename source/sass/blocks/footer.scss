@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 40px 62px;
   }
 
   @media screen and (min-width: $desctop) {
@@ -22,7 +23,7 @@
 }
 
 .footer-social {
-  margin: 30px auto 45px;
+  margin: 33px auto 41px;
 }
 
 .footer-develop__block {
