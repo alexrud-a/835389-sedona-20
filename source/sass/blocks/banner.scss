@@ -47,7 +47,11 @@
     padding: 34px 46px 45px;
 
     @media screen and (min-width: $tablet) {
-      height: 300px;
+      height: 211px;
+    }
+
+    @media screen and (min-width: $desctop) {
+      height: 221px;
     }
   }
 }
