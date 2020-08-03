@@ -1,18 +1,37 @@
 .banner {
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center center;
   background-size: cover;
-  height: 310px;
   color: $white;
-  padding: 40px 20px;
+  padding: 89px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 54px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center bottom;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 57px;
+    background-size: cover;
+
+    @media screen and (min-width: $tablet) {
+      background: url("../img/bg-intro-triangle-tablet.svg") no-repeat center bottom;
+    }
+
+    @media screen and (min-width: $desctop) {
+      background: url("../img/bg-intro-triangle-desktop.svg") no-repeat center bottom;
+    }
+  }
 
   @media screen and (min-width: $tablet) {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat center center;
     background-size: cover;
-    height: 518px;
+    padding: 84px 20px;
     margin-top: 0;
   }
 
@@ -22,10 +41,15 @@
   }
 
   &--page {
-    height: 160px;
+    height: 79px;
+    padding: 34px 46px 45px;
 
     @media screen and (min-width: $tablet) {
-      height: 300px;
+      padding: 96px 46px 115px;
+    }
+
+    @media screen and (min-width: $desctop) {
+      padding: 101px 46px 120px;
     }
   }
 }

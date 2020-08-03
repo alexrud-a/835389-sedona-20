@@ -1,5 +1,23 @@
 .about-section {
-  padding: 20px 30px;
+  padding: 23px 20px 9px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 36px 30px 40px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding: 45px 30px 30px;
+  }
+
+  &--page {
+    @media screen and (min-width: $tablet) {
+      padding: 53px 30px 48px;
+    }
+
+    @media screen and (min-width: $desctop) {
+      padding: 93px 30px 48px;
+    }
+  }
 }
 
 .about-section__text-block {
@@ -12,5 +30,15 @@
 }
 
 .about-section__text {
-  margin: 33px 0;
+  margin: 33px 0 0;
+
+  @media screen and (min-width: $tablet) {
+    margin: 30px 0 13px;
+  }
+}
+
+.about-section__title--page {
+  @media screen and (min-width: $tablet) {
+    font-size: 30px;
+  }
 }
