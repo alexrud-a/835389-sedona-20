@@ -563,7 +563,8 @@ img {
     padding: 21px 20px; }
     @media screen and (min-width: 768px) {
       .advantage__item--icons {
-        flex-basis: 100%; } }
+        flex-basis: 100%;
+        display: flex; } }
 
 .advantage__item-title--white {
   color: #ffffff; }
@@ -598,11 +599,11 @@ img {
 .advantage__item-count {
   position: relative;
   display: inline-block; }
-  .advantage__item-count:before {
+  .advantage__item-count::before {
     position: absolute;
     content: "—";
     left: -15px; }
-  .advantage__item-count:after {
+  .advantage__item-count::after {
     position: absolute;
     content: "—";
     right: -15px; }
