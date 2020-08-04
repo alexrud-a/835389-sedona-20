@@ -883,14 +883,18 @@ img {
   text-align: center;
   padding: 15px 30px;
   text-transform: uppercase;
-  border: none; }
+  border: none;
+  width: 100%;
+  cursor: pointer; }
   .btn:hover {
     background-color: #669ec0; }
-  .btn:active {
+  .btn:active, .btn:focus {
     background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.3); }
+    color: rgba(255, 255, 255, 0.3);
+    outline: none; }
   .btn:disabled {
-    background-color: #e5e5e5; }
+    background-color: #e5e5e5;
+    cursor: default; }
 
 .gallery {
   display: grid;
@@ -1001,6 +1005,10 @@ img {
     background-image: url("../img/icon-facebook.svg"); }
   .social__item-link--ytb {
     background-image: url("../img/icon-youtube.svg"); }
+  .social__item-link:hover {
+    background-color: #669ec0; }
+  .social__item-link:active, .social__item-link:focus {
+    background-color: #5496bd; }
 
 .footer {
   padding: 40px 30px;
