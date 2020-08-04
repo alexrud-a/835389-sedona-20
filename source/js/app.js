@@ -14,4 +14,15 @@ document.addEventListener('DOMContentLoaded', function(){
       nav.classList.toggle('header__nav--open');
     })
   }
+
+  var links = document.querySelectorAll('.nav__menu-link');
+  links.forEach(function(item, i) {
+    var link = links[i].getAttribute('href');
+    var path = window.location.pathname;
+    path = path.slice(1);
+    if (link == path) {
+      links[i].classList.add('nav__menu-link--active');
+    }
+  });
+
 });

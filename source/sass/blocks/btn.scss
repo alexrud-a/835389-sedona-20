@@ -9,4 +9,17 @@
   padding: 15px 30px;
   text-transform: uppercase;
   border: none;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $disabled;
+  }
 }
