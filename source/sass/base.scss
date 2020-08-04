@@ -14,4 +14,10 @@ img {
 
 .hidden {
   display: none;
+
+  &--mob {
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+  }
 }

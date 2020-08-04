@@ -14,6 +14,18 @@
   @media screen and (min-width: $desctop) {
     padding: 29px 0 66px;
   }
+
+  &--video {
+    padding: 24px 25px 13px;
+
+    @media screen and (min-width: $tablet) {
+      padding: 43px 25px 45px;
+    }
+
+    @media screen and (min-width: $desctop) {
+      padding: 46px 25px 33px;
+    }
+  }
 }
 
 .interested__title {
@@ -22,6 +34,10 @@
   font-size: 21px;
   line-height: 26px;
   color: $black;
+
+  &--video {
+    font-size: 18px;
+  }
 
   @media screen and (min-width: $tablet) {
     font-size: 30px;
