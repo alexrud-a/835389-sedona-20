@@ -15,14 +15,4 @@ document.addEventListener('DOMContentLoaded', function(){
     })
   }
 
-  var links = document.querySelectorAll('.nav__menu-link');
-  links.forEach(function(item, i) {
-    var link = links[i].getAttribute('href');
-    var path = window.location.pathname.split('/').slice(-1).join();
-    console.log(path);
-    if (link == path) {
-      links[i].classList.add('nav__menu-link--active');
-    }
-  });
-
 });
