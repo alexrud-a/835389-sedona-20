@@ -24,4 +24,13 @@
   &--ytb {
     background-image: url("../img/icon-youtube.svg");
   }
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $blue-active;
+  }
 }

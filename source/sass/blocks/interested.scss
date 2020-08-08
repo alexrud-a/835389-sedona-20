@@ -3,12 +3,28 @@
 }
 
 .interested__wrap {
-  padding: 30px 30px 50px;
+  padding: 12px 21px 48px;
 
   @media screen and (min-width: $tablet) {
-    padding: 58px 0;
+    padding: 29px 0 62px;
     max-width: 458px;
     margin: 0 auto;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding: 29px 0 66px;
+  }
+
+  &--video {
+    padding: 24px 25px 13px;
+
+    @media screen and (min-width: $tablet) {
+      padding: 43px 25px 45px;
+    }
+
+    @media screen and (min-width: $desctop) {
+      padding: 46px 25px 33px;
+    }
   }
 }
 
@@ -18,12 +34,30 @@
   font-size: 21px;
   line-height: 26px;
   color: $black;
+
+  &--video {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .interested__desc {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 24px;
+  margin: 24px 0;
+
+  @media screen and (min-width: $tablet) {
+    margin: 35px 0;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin: 39px 0;
+  }
 }
 
 .interested__map {

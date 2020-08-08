@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
-  var width = document.body.clientWidth;
+  var width = window.innerWidth;
 
-  if (width <= 768) {
+  if (width < 768) {
     var nav = document.querySelector('.nav-js');
     var toggle = document.querySelector('.toogle-js');
     nav.classList.remove('header__nav--open');
@@ -14,4 +14,5 @@ document.addEventListener('DOMContentLoaded', function(){
       nav.classList.toggle('header__nav--open');
     })
   }
+
 });

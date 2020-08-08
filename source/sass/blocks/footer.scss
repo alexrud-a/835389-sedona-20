@@ -6,11 +6,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 62px;
+    padding: 37px 62px;
   }
 
   @media screen and (min-width: $desctop) {
-    padding: 40px 120px;
+    padding: 37px 120px;
   }
 }
 
@@ -24,6 +24,10 @@
 
 .footer-social {
   margin: 33px auto 41px;
+
+  @media screen and (min-width: $tablet) {
+    margin: auto;
+  }
 }
 
 .footer-develop__block {

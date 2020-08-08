@@ -9,4 +9,22 @@
   padding: 15px 30px;
   text-transform: uppercase;
   border: none;
+  width: 100%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $blue-active;
+    color: rgba($white, 0.3);
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $disabled;
+    cursor: default;
+  }
 }

@@ -21,7 +21,7 @@
           <div class="nav__menu-wrap">
             <ul class="nav__menu-list">
               <li class="nav__menu-item">
-                <a href="index.html" class="nav__menu-link nav__menu-link--active">
+                <a href="index.html" class="nav__menu-link">
                   Главная
                 </a>
               </li>
@@ -31,7 +31,7 @@
                 </a>
               </li>
               <li class="nav__menu-item">
-                <a href="form.html" class="nav__menu-link">
+                <a href="form.html" class="nav__menu-link nav__menu-link--active">
                   Форма отзыва
                 </a>
               </li>
@@ -85,20 +85,22 @@
               </div>
             </div>
             <div class="feedback__block feedback__block--2">
-              <h2 class="title feedback__title">
-                Контактная информация
+              <h2 class="title feedback__title feedback__title--decoration">
+                <span>
+                  Контактная информация
+                </span>
               </h2>
-              <div class="feedback__form-control">
+              <div class="feedback__form-control feedback__form-control--contacts">
                 <label for="phone-number" class="feedback__label feedback__label--block">
                   Контактный телефон*:
                 </label>
-                <input type="tel" id="phone-number" name="phone-number" class="feedback__input" placeholder="Введите телефон" required>
+                <input type="tel" id="phone-number" name="phone-number" class="feedback__input feedback__input--tel" placeholder="Введите телефон" required>
               </div>
-              <div class="feedback__form-control">
+              <div class="feedback__form-control feedback__form-control--contacts">
                 <label for="email" class="feedback__label feedback__label--block">
                   Электронная почта*:
                 </label>
-                <input type="email" id="email" name="email" class="feedback__input" placeholder="Введите e-mail" required>
+                <input type="email" id="email" name="email" class="feedback__input feedback__input--mail" placeholder="Введите e-mail" required>
               </div>
             </div>
             <div class="feedback__block feedback__block--3">
@@ -106,7 +108,7 @@
                 Ваше общее впечатление
               </h2>
               <div class="feedback__form-control">
-                <input type="radio" id="good" name="impression" value="Положительное" class="feedback__radio">
+                <input type="radio" id="good" name="impression" value="Положительное" class="feedback__radio" checked>
                 <label for="good" class="feedback__label feedback__label--radio">
                   Скорее положительное
                 </label>
@@ -125,28 +127,30 @@
               </div>
             </div>
             <div class="feedback__block feedback__block--4">
-              <h2 class="title feedback__title">
-                Посещенные достопримечательности
+              <h2 class="title feedback__title feedback__title--decoration">
+                <span>
+                  Посещенные <br>достопримечательности
+                </span>
               </h2>
-              <div class="feedback__form-control">
+              <div class="feedback__form-control feedback__form-control--checkbox">
                 <input type="checkbox" id="bridge" name="place" value="Мост дьявола" class="feedback__check">
                 <label for="bridge" class="feedback__label feedback__label--check">
                   Мост дьявола
                 </label>
               </div>
-              <div class="feedback__form-control">
+              <div class="feedback__form-control feedback__form-control--checkbox">
                 <input type="checkbox" id="mountain" name="place" value="Гора-Колокол" class="feedback__check">
                 <label for="mountain" class="feedback__label feedback__label--check">
                   Гора-Колокол
                 </label>
               </div>
-              <div class="feedback__form-control">
+              <div class="feedback__form-control feedback__form-control--checkbox">
                 <input type="checkbox" id="park" name="place" value="Слайд-парк" class="feedback__check">
                 <label for="park" class="feedback__label feedback__label--check">
                   Слайд-парк
                 </label>
               </div>
-              <div class="feedback__form-control">
+              <div class="feedback__form-control feedback__form-control--checkbox">
                 <input type="checkbox" id="rocks" name="place" value="Красные скалы" class="feedback__check">
                 <label for="rocks" class="feedback__label feedback__label--check">
                   Красные скалы
@@ -154,11 +158,14 @@
               </div>
             </div>
             <div class="feedback__block feedback__block--5">
-              <label for="feedback-text" class="title feedback__title">
-                Опишите свои эмоции:
+              <label for="feedback-text" class="title feedback__title feedback__title--decoration">
+                <span>
+                  Опишите свои эмоции:
+                </span>
               </label>
               <textarea class="feedback__textarea" id="feedback-text" name="feedback-text" placeholder="Опишите подробно все свои восторги"></textarea>
               <button type="submit" class="btn feedback__submit">Отправить отзыв</button>
+              <span class="hidden hidden--mob feedback__label feedback__label--required">* — обязательные поля</span>
             </div>
           </form>
         </section>
