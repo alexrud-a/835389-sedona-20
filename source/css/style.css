@@ -898,7 +898,9 @@ img {
 
 .player__btn {
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  outline: none;
+  cursor: pointer; }
   .player__btn--quality {
     flex-grow: 1;
     text-align: right; }

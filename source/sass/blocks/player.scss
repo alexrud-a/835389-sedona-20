@@ -98,6 +98,8 @@
 .player__btn {
   border: none;
   background-color: transparent;
+  outline: none;
+  cursor: pointer;
 
   &--quality {
     flex-grow: 1;
