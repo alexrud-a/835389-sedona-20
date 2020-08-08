@@ -386,7 +386,8 @@ img {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  position: relative; }
+  position: relative;
+  min-height: 1px; }
 
 .header__logo {
   text-align: center;
@@ -394,7 +395,7 @@ img {
   z-index: 1;
   left: 50%;
   transform: translateX(-50%);
-  top: 100%; }
+  top: calc(100% - 1px); }
   @media screen and (min-width: 768px) {
     .header__logo {
       top: 0; } }
@@ -413,7 +414,7 @@ img {
   height: 22px;
   position: absolute;
   right: 19px;
-  top: 15px; }
+  top: 14px; }
   .nav__toogle:hover {
     outline: none;
     opacity: 0.6; }
