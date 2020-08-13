@@ -11,6 +11,7 @@
 
   @media (min-resolution: 2dppx) {
     background: url("../img/bg-back-mobile@2x.jpg") no-repeat center center;
+    background-size: cover;
   }
 
   &::before {
@@ -35,11 +36,12 @@
   @media screen and (min-width: $tablet) {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat center center;
     background-size: cover;
-    padding: 130px 20px 94px;
+    padding: 74px 20px 94px;
     margin-top: 0;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/bg-back-tablet@2x.jpg") no-repeat center center;
+      background-size: cover;
     }
   }
 
@@ -50,6 +52,7 @@
 
     @media (min-resolution: 2dppx) {
       background: url("../img/bg-back-desktop@2x.jpg") no-repeat center center;
+      background-size: cover;
     }
   }
 
