@@ -42,6 +42,7 @@
 .gallery__item-img {
   img {
     width: 100%;
+    display: block;
 
     @media screen and (min-width: $tablet) {
       max-height: 270px;

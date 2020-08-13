@@ -167,12 +167,16 @@
 }
 
 .advantage__item-img {
+  height: 260px;
+  overflow: hidden;
+
   img {
     width: 100%;
   }
 
   @media screen and (min-width: $tablet) {
     flex-basis: 66.6666%;
+    height: 256px;
   }
 
   &--last {
