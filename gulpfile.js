@@ -5,6 +5,8 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const svgSprite = require('gulp-svg-sprite');
+const webp = require('gulp-webp');
 
 // Styles
 
@@ -38,6 +40,25 @@ const server = (done) => {
 }
 
 exports.server = server;
+
+gulp.task('svgSprite', function () {
+  return gulp.src('source/img/*.svg')
+    .pipe(svgSprite({
+        mode: {
+          stack: {
+            sprite: "../sprite.svg"
+          }
+        },
+      }
+    ))
+    .pipe(gulp.dest('source/img/'));
+});
+
+gulp.task('webp', () =>
+  gulp.src('source/img/*.jpg')
+    .pipe(webp())
+    .pipe(gulp.dest('source/img/'))
+);
 
 // Watcher
 

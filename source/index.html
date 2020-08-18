@@ -77,6 +77,9 @@
           </div>
           <div class="advantage__item-img advantage__item-img--first">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x">
               <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="" title="">
@@ -85,7 +88,9 @@
           <div class="advantage__item advantage__item--icons">
             <div class="advantage__icon">
               <div class="advantage__icon-img">
-                <img src="img/icon-house.svg" alt="" title="">
+                <svg width="40" height="40">
+                  <use href="img/sprite.svg#icon-house"></use>
+                </svg>
               </div>
               <div class="advantage__icon-text">
                 <h4 class="title advantage__icon-title">
@@ -98,7 +103,9 @@
             </div>
             <div class="advantage__icon">
               <div class="advantage__icon-img">
-                <img src="img/icon-gift.svg" alt="" title="">
+                <svg width="40" height="40">
+                  <use href="img/sprite.svg#icon-gift"></use>
+                </svg>
               </div>
               <div class="advantage__icon-text">
                 <h4 class="title advantage__icon-title">
@@ -111,7 +118,9 @@
             </div>
             <div class="advantage__icon">
               <div class="advantage__icon-img">
-                <img src="img/icon-burger.svg" alt="" title="">
+                <svg width="40" height="40">
+                  <use href="img/sprite.svg#icon-burger"></use>
+                </svg>
               </div>
               <div class="advantage__icon-text">
                 <h4 class="title advantage__icon-title">
@@ -136,6 +145,9 @@
           </div>
           <div class="advantage__item-img advantage__item-img--last">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
               <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="" title="">
@@ -197,24 +209,32 @@
         <div class="footer-social social">
           <div class="social__item">
             <a href="#" class="social__item-link social__item-link--tw">
-              Twitter
+              <svg width="20" height="20">
+                <use href="img/sprite.svg#icon-twitter"></use>
+              </svg>
             </a>
           </div>
           <div class="social__item">
             <a href="#" class="social__item-link social__item-link--fb">
-              Facebook
+              <svg width="20" height="20">
+                <use href="img/sprite.svg#icon-facebook"></use>
+              </svg>
             </a>
           </div>
           <div class="social__item">
             <a href="#" class="social__item-link social__item-link--ytb">
-              Youtube
+              <svg width="20" height="20">
+                <use href="img/sprite.svg#icon-youtube"></use>
+              </svg>
             </a>
           </div>
         </div>
         <div class="footer-develop">
-          <a href="#" class="footer-develop__block">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-develop__block">
             <span class="footer-develop__text">Разработано</span>
-            <img class="footer-develop__logo" src="img/logo-htmlacademy.svg" alt="" title="">
+            <svg width="26" height="34">
+              <use href="img/sprite.svg#logo-htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </footer>

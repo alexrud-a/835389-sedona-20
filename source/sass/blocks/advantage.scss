@@ -144,6 +144,15 @@
 .advantage__icon-img {
   flex-basis: 40px;
   margin-right: 10px;
+
+  svg {
+    fill: $blue;
+
+    @media screen and (min-width: $tablet) {
+      width: 60px;
+      height: 60px;
+    }
+  }
 }
 
 .advantage__icon-text {
