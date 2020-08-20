@@ -5,8 +5,12 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-const svgSprite = require('gulp-svg-sprite');
+const svgstore = require('gulp-svgstore');
 const webp = require('gulp-webp');
+const rename = require("gulp-rename");
+const imagemin = require('gulp-imagemin');
+const del = require('del');
+const csso = require('gulp-csso');
 
 // Styles
 
@@ -18,19 +22,31 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(csso())
+    .pipe(rename({suffix: '.min'}))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
+
+const img = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(imagemin([
+      imagemin.mozjpeg({quality: 75, progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+    ]))
+}
+
+exports.img = img;
 
 // Server
 
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -41,24 +57,59 @@ const server = (done) => {
 
 exports.server = server;
 
-gulp.task('svgSprite', function () {
+const sprite = () => {
   return gulp.src('source/img/*.svg')
-    .pipe(svgSprite({
-        mode: {
-          stack: {
-            sprite: "../sprite.svg"
-          }
-        },
-      }
-    ))
-    .pipe(gulp.dest('source/img/'));
-});
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest('build/img/'));
+}
 
-gulp.task('webp', () =>
-  gulp.src('source/img/*.jpg')
+exports.sprite = sprite;
+
+const imageWebp = () => {
+  return gulp.src('source/img/*.jpg')
     .pipe(webp())
-    .pipe(gulp.dest('source/img/'))
+    .pipe(gulp.dest('build/img/'))
+}
+
+exports.imageWebp = imageWebp;
+
+const clean = () => {
+  return del("build");
+}
+
+exports.clean = clean;
+
+const copy = () => {
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/js/**",
+    "source/*ico",
+    "source/**/*.html"
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
+}
+
+exports.copy = copy;
+
+const imgTask = gulp.series(
+  sprite,
+  img,
+  imageWebp,
+)
+
+exports.imgTask = imgTask;
+
+const build = gulp.series(
+  clean,
+  copy,
+  styles,
 );
+
+exports.build = build;
 
 // Watcher
 
@@ -68,5 +119,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  build, server, watcher
 );
