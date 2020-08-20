@@ -5,7 +5,7 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-const svgSprite = require('gulp-svg-sprite');
+const svgstore = require('gulp-svgstore');
 const webp = require('gulp-webp');
 const rename = require("gulp-rename");
 const imagemin = require('gulp-imagemin');
@@ -57,24 +57,22 @@ const server = (done) => {
 
 exports.server = server;
 
-gulp.task('svgSprite', function () {
+const sprite = () => {
   return gulp.src('source/img/*.svg')
-    .pipe(svgSprite({
-        mode: {
-          stack: {
-            sprite: "../sprite.svg"
-          }
-        },
-      }
-    ))
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
     .pipe(gulp.dest('build/img/'));
-});
+}
 
-gulp.task('webp', () =>
-  gulp.src('source/img/*.jpg')
+exports.sprite = sprite;
+
+const imageWebp = () => {
+  return gulp.src('source/img/*.jpg')
     .pipe(webp())
     .pipe(gulp.dest('build/img/'))
-);
+}
+
+exports.imageWebp = imageWebp;
 
 const clean = () => {
   return del("build");
@@ -97,36 +95,21 @@ const copy = () => {
 
 exports.copy = copy;
 
-/*const build = () => {
-  return gulp.series(
-    "clean", "copy", "styles", "svgSprite"
-  );
-}
+const imgTask = gulp.series(
+  sprite,
+  img,
+  imageWebp,
+)
 
-exports.build = build;*/
+exports.imgTask = imgTask;
 
-//The following tasks did not complete: build
-//Did you forget to signal async completion?
-
-const build = () => gulp.series(
-  "clean",
-  "copy",
-  "styles",
-  "svgSprite",
-  "img",
-  "webp",
+const build = gulp.series(
+  clean,
+  copy,
+  styles,
 );
+
 exports.build = build;
-
-/*
-пробовала такой вариант. тоже не ошибка, хотя каждая задача по отдельности запускается и выполняется
-const build = () => {
-  return gulp.series(
-    "clean", "copy", "styles", "svgSprite"
-  );
-}
-
-exports.build = build;*/
 
 // Watcher
 
@@ -136,5 +119,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  build, server, watcher
 );
