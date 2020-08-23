@@ -132,4 +132,22 @@
       fill: $white;
     }
   }
+
+  &:hover svg {
+    fill: #333333;
+  }
+
+  &:active svg {
+    fill: rgba(#333333, 0.3);
+  }
+
+  @media screen and (min-width: $tablet) {
+    &:hover svg {
+      fill: rgba($white, 0.6);
+    }
+
+    &:active svg {
+      fill: rgba($white, 0.3);
+    }
+  }
 }
