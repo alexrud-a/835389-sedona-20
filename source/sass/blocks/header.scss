@@ -17,6 +17,14 @@
   @media screen and (min-width: $tablet) {
     top: 0;
   }
+
+  img {
+    width: 100px;
+
+    @media screen and (min-width: $tablet) {
+      width: 180px;
+    }
+  }
 }
 
 .header__nav--nojs {

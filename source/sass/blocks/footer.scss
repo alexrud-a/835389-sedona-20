@@ -34,6 +34,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover svg {
+    fill: $blue;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .footer-develop__text {
