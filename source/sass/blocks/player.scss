@@ -75,7 +75,7 @@
   }
 
   &--light {
-    background: #f2f2f2;
+    background-color: $light;
     height: 66px;
     top: 0;
 
@@ -134,11 +134,11 @@
   }
 
   &:hover svg {
-    fill: #333333;
+    fill: $dark;
   }
 
   &:active svg {
-    fill: rgba(#333333, 0.3);
+    fill: rgba($dark, 0.3);
   }
 
   @media screen and (min-width: $tablet) {

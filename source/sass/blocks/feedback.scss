@@ -15,7 +15,7 @@
 
 .feedback__block {
   padding: 20px 20px 25px;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid $disabled;
   box-sizing: border-box;
 
   @media screen and (min-width: $tablet) {
@@ -90,7 +90,7 @@
   font-size: 18px;
   line-height: 26px;
   color: $black;
-  background-color: #f2f2f2;
+  background-color: $light;
   padding: 15px 20px;
   border: 4px solid transparent;
   border-radius: 0;
@@ -106,13 +106,13 @@
   }
 
   &:hover {
-    background-color: #e5e5e5;
+    background-color: $disabled;
   }
 
   &:focus {
     outline: none;
     background-color: $white;
-    border: 4px solid #e5e5e5;
+    border: 4px solid $disabled;
   }
 
   &--tel {
@@ -170,7 +170,7 @@
   font-size: 18px;
   line-height: 26px;
   color: $black;
-  background-color: #f2f2f2;
+  background-color: $light;
   padding: 15px 20px;
   border: 4px solid transparent;
   border-radius: 0;
@@ -189,13 +189,13 @@
   }
 
   &:hover {
-    background-color: #e5e5e5;
+    background-color: $disabled;
   }
 
   &:focus {
     outline: none;
     background-color: $white;
-    border: 4px solid #e5e5e5;
+    border: 4px solid $disabled;
   }
 }
 
@@ -223,7 +223,7 @@
     position: absolute;
     content: "";
     border-radius: 50%;
-    background-color: #f2f2f2;
+    background-color: $light;
     width: 48px;
     height: 48px;
     left: 0;
@@ -244,7 +244,7 @@
 
   &:hover {
     &::before {
-      background-color: #e5e5e5;
+      background-color: $disabled;
     }
   }
 
@@ -254,7 +254,7 @@
     }
 
     &::after {
-      background-color: rgba(#333333, 0.3);
+      background-color: rgba($dark, 0.3);
     }
   }
 }
@@ -284,7 +284,7 @@
   &::before {
     position: absolute;
     content: "";
-    background-color: #f2f2f2;
+    background-color: $light;
     width: 48px;
     height: 48px;
     left: 0;
@@ -307,7 +307,7 @@
 
   &:hover {
     &::before {
-      background-color: #e5e5e5;
+      background-color: $disabled;
     }
   }
 
@@ -317,7 +317,7 @@
     }
 
     &::after {
-      background-color: rgba(#333333, 0.3);
+      background-color: rgba($dark, 0.3);
     }
   }
 }
