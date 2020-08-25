@@ -98,7 +98,7 @@
       left: 50%;
       bottom: 0;
       transform: translateX(-50%);
-      background-color: #d6d6d6;
+      background-color: $gray;
 
       @media screen and (min-width: $tablet) {
         display: none;
