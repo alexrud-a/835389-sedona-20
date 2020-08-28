@@ -126,7 +126,7 @@
   }
 
   svg {
-    fill: #5c6870;
+    fill: $player-btn;
 
     @media screen and (min-width: $tablet) {
       fill: $white;

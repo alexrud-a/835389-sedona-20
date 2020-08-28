@@ -1,6 +1,6 @@
 body {
   min-width: 320px;
-  background-color: #f2f2f2;
+  background-color: $light;
 }
 
 a {
@@ -10,14 +10,4 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.hidden {
-  display: none;
-
-  &--mob {
-    @media screen and (min-width: $tablet) {
-      display: block;
-    }
-  }
 }

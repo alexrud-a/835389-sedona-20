@@ -15,25 +15,28 @@ document.addEventListener('DOMContentLoaded', function(){
     })
   }
 
-  ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-        center: [34.869497,-111.760186],
-        zoom: 10,
-        controls: [],
-      }),
+  var map = document.getElementById('map');
+  if(map) {
+    ymaps.ready(function () {
+      var myMap = new ymaps.Map('map', {
+          center: [34.869497,-111.760186],
+          zoom: 10,
+          controls: [],
+        }),
 
-      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-        hintContent: 'Соединённые Штаты Америки, штат Аризона, Коконино-Каунти',
-        balloonContent: 'Соединённые Штаты Америки, штат Аризона, Коконино-Каунти'
-      }, {
-        iconLayout: 'default#image',
-        iconImageHref: '../img/icon-map-marker.svg',
-        iconImageSize: [27, 27],
-        iconImageOffset: [-10, -10]
-      });
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: 'Соединённые Штаты Америки, штат Аризона, Коконино-Каунти',
+          balloonContent: 'Соединённые Штаты Америки, штат Аризона, Коконино-Каунти'
+        }, {
+          iconLayout: 'default#image',
+          iconImageHref: '../img/icon-map-marker.svg',
+          iconImageSize: [27, 27],
+          iconImageOffset: [-10, -10]
+        });
 
-    myMap.geoObjects
-      .add(myPlacemark)
-  });
+      myMap.geoObjects
+        .add(myPlacemark)
+    });
+  }
 
 });

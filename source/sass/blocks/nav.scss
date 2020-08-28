@@ -169,14 +169,14 @@
     }
 
     &--active {
-      color: #766357;
+      color: $nav-active;
 
       &:hover {
-        color: #604e43;
+        color: $nav-active-hover;
       }
 
       &:active {
-        color: #766357;
+        color: $nav-active-down;
         opacity: 0.3;
       }
     }

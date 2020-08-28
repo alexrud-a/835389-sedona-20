@@ -1,5 +1,8 @@
 .banner {
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center center;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $light-gray;
   background-size: cover;
   color: $white;
   padding: 89px 20px;
@@ -10,7 +13,7 @@
   position: relative;
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/bg-back-mobile@2x.jpg") no-repeat center center;
+    background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: cover;
   }
 
@@ -34,24 +37,24 @@
   }
 
   @media screen and (min-width: $tablet) {
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center center;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
     padding: 74px 20px 94px;
     margin-top: 0;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/bg-back-tablet@2x.jpg") no-repeat center center;
+      background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: cover;
     }
   }
 
   @media screen and (min-width: $desctop) {
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center center;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: cover;
     padding: 79px 20px 88px;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/bg-back-desktop@2x.jpg") no-repeat center center;
+      background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: cover;
     }
   }

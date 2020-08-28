@@ -21,7 +21,7 @@
   img {
     width: 100px;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desctop) {
       width: 180px;
     }
   }
