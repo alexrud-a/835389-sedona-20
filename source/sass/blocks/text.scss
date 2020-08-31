@@ -1,4 +1,14 @@
 .text {
   text-transform: uppercase;
   line-height: 23px;
+
+  br {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet){
+    br {
+      display: block;
+    }
+  }
 }

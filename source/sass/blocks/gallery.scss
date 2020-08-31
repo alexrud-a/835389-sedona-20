@@ -16,7 +16,7 @@
 }
 
 .gallery__item {
-  padding: 22px 20px 15px;
+  padding: 22px 20px 14px;
   border-bottom: 1px solid $disabled;
   position: relative;
 
@@ -66,7 +66,7 @@
   @media screen and (min-width: $desctop) {
     background-color: rgba($black, 0.3);
     position: absolute;
-    padding: 7px 20px 21px;
+    padding: 0 20px 21px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -84,11 +84,12 @@
 
   @media screen and (min-width: $desctop) {
     color: $white;
+    line-height: 35px;
   }
 }
 
 .gallery__item-autor {
-  line-height: 23px;
+  line-height: 14px;
 }
 
 .gallery__item-likes {
@@ -110,7 +111,7 @@
 
   svg {
     opacity: 0.3;
-    margin-right: 10px;
+    margin-right: 16px;
 
     @media screen and (min-width: $desctop) {
       opacity: 1;

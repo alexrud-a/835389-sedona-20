@@ -14,19 +14,27 @@
 }
 
 .feedback__block {
-  padding: 20px 20px 25px;
+  padding: 10px 20px 7px;
   border-top: 1px solid $disabled;
   box-sizing: border-box;
+
+  &--5 {
+    padding-top: 19px;
+    text-align: center;
+    padding-bottom: 37px;
+  }
 
   @media screen and (min-width: $tablet) {
     border-top: none;
 
     &--1 {
       flex-basis: 50%;
+      padding-left: 57px;
     }
 
     &--2 {
       flex-basis: 100%;
+      padding-top: 36px;
     }
 
     &--3 {
@@ -50,11 +58,13 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      padding-bottom: 22px;
     }
 
     &--5 {
       flex-basis: 100%;
       position: relative;
+      padding-bottom: 60px;
     }
   }
 
@@ -81,7 +91,20 @@
   &--required {
     position: absolute;
     right: 10px;
-    bottom: 37px;
+    bottom: 73px;
+  }
+
+  &--block {
+    margin-left: 20px;
+    margin-bottom: 5px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: $desctop) {
+      margin-left: 0;
+    }
   }
 }
 
@@ -129,19 +152,25 @@
 }
 
 .feedback__form-control {
-  margin: 20px 0;
+  margin: 18px 0;
   display: flex;
   align-items: center;
   overflow: hidden;
   position: relative;
 
+  @media screen and (min-width: $tablet) {
+    margin: 18px 0;
+  }
+
   &--contacts {
     flex-direction: column;
     align-items: flex-start;
+    margin: 17px 0;
 
     @media screen and (min-width: $desctop) {
       flex-direction: row;
       align-items: center;
+      margin: 62px 0 21px;
     }
   }
 
@@ -176,8 +205,15 @@
   }
 
   &--checkbox {
+    margin-bottom: 34px;
+
+    &:last-child {
+      margin-bottom: 17px;
+    }
+
     @media screen and (min-width: $tablet) {
       flex-basis: 35%;
+      margin: 40px 0 14px;
     }
 
     @media screen and (min-width: $desctop) {
@@ -218,6 +254,10 @@
     background-color: $white;
     border: 4px solid $disabled;
   }
+
+  @media screen and (min-width: $tablet) {
+    margin: 46px 0 59px;
+  }
 }
 
 .feedback__submit {
@@ -239,6 +279,11 @@
   line-height: 26px;
   text-transform: none;
   color: $black;
+  margin: 3px 0;
+
+  @media screen and (min-width: $tablet) {
+    height: 54px;
+  }
 
   &::before {
     position: absolute;
@@ -249,6 +294,11 @@
     height: 48px;
     left: 0;
     top: 0;
+
+    @media screen and (min-width: $tablet) {
+      width: 54px;
+      height: 54px;
+    }
   }
 
   &::after {
@@ -261,6 +311,11 @@
     left: 15px;
     top: 15px;
     display: none;
+
+    @media screen and (min-width: $tablet) {
+      width: 22px;
+      height: 22px;
+    }
   }
 
   &:hover {
@@ -302,6 +357,10 @@
   text-transform: none;
   color: $black;
 
+  @media screen and (min-width: $tablet) {
+    height: 54px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -310,6 +369,11 @@
     height: 48px;
     left: 0;
     top: 0;
+
+    @media screen and (min-width: $tablet) {
+      width: 54px;
+      height: 54px;
+    }
   }
 
   &::after {
@@ -324,6 +388,11 @@
     left: 0;
     top: 0;
     display: none;
+
+    @media screen and (min-width: $tablet) {
+      width: 54px;
+      height: 54px;
+    }
   }
 
   &:hover {
@@ -356,6 +425,12 @@
 .feedback__title {
   @media screen and (min-width: $tablet) {
     text-align: left;
+  }
+
+  &--mb {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 52px;
+    }
   }
 
   &--decoration {

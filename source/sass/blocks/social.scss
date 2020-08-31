@@ -9,10 +9,14 @@
   width: 46px;
   height: 48px;
   background-color: $blue;
-  margin: 0 3px;
+  margin-right: 4px;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
+
+  @media screen and (min-width: $tablet){
+    margin-right: 8px;
+  }
 
   &:hover {
     background-color: $blue-hover;

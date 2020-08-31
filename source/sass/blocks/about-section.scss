@@ -10,12 +10,26 @@
   }
 
   &--page {
+    padding: 23px 23px 6px;
+
     @media screen and (min-width: $tablet) {
       padding: 53px 30px 48px;
     }
 
     @media screen and (min-width: $desctop) {
       padding: 93px 30px 48px;
+    }
+  }
+
+  &--form {
+    padding: 28px 23px 15px;
+
+    @media screen and (min-width: $tablet) {
+      padding: 49px 23px 61px;
+    }
+
+    @media screen and (min-width: $desctop) {
+      padding: 101px 23px 30px;
     }
   }
 }
@@ -34,6 +48,12 @@
 
   @media screen and (min-width: $tablet) {
     margin: 30px 0 13px;
+  }
+
+  &--form {
+    @media screen and (min-width: $tablet) {
+      margin: 36px 0 9px;
+    }
   }
 }
 
