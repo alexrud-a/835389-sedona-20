@@ -16,7 +16,7 @@
 }
 
 .gallery__item {
-  padding: 22px 20px 14px;
+  padding: 22px 20px 18px;
   border-bottom: 1px solid $disabled;
   position: relative;
 
@@ -58,7 +58,7 @@
 
 .gallery__item-meta {
   @media screen and (min-width: $tablet) {
-    padding: 3px 20px 16px;
+    padding: 6px 20px 19px;
     background-color: $light;
     position: relative;
   }
@@ -66,7 +66,7 @@
   @media screen and (min-width: $desctop) {
     background-color: rgba($black, 0.3);
     position: absolute;
-    padding: 0 20px 21px;
+    padding: 0 20px 14px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -81,6 +81,11 @@
   color: $black;
   text-transform: uppercase;
   margin-top: 9px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 6px;
+  }
 
   @media screen and (min-width: $desctop) {
     color: $white;

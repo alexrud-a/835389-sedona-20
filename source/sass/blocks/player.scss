@@ -66,12 +66,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 22px;
+  padding: 14px 12px 14px 18px;
 
   @media screen and (min-width: $tablet) {
     height: 93px;
     top: -93px;
-    padding: 20px 34px;
+    padding: 20px 30px;
   }
 
   &--light {
@@ -119,9 +119,10 @@
   &--quality {
     flex-grow: 1;
     text-align: right;
+    margin: 0 12px;
 
     @media screen and (min-width: $tablet) {
-      margin: 0 20px;
+      margin: 0 12px;
     }
   }
 

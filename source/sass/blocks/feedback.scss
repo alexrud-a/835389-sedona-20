@@ -22,6 +22,10 @@
     padding-top: 19px;
     text-align: center;
     padding-bottom: 37px;
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 14px;
+    }
   }
 
   @media screen and (min-width: $tablet) {
@@ -59,6 +63,10 @@
       flex-wrap: wrap;
       justify-content: center;
       padding-bottom: 22px;
+
+      @media screen and (min-width: $tablet) {
+        padding-bottom: 28px;
+      }
     }
 
     &--5 {
@@ -104,6 +112,32 @@
 
     @media screen and (min-width: $desctop) {
       margin-left: 0;
+    }
+  }
+
+  &--second {
+    @media screen and (min-width: $tablet) {
+      margin-left: 36px;
+    }
+
+    @media screen and (min-width: $desctop) {
+      margin-left: 20px;
+    }
+  }
+
+  &--third {
+    @media screen and (min-width: $desctop) {
+      margin-left: 37px;
+    }
+  }
+
+  &--fourth {
+    @media screen and (min-width: $tablet) {
+      margin-left: 36px;
+    }
+
+    @media screen and (min-width: $desctop) {
+      margin-left: 37px;
     }
   }
 }
@@ -213,11 +247,22 @@
 
     @media screen and (min-width: $tablet) {
       flex-basis: 35%;
-      margin: 40px 0 14px;
+      margin: 37px 0 14px;
+
+      &:nth-child(4),
+      &:last-child {
+        margin-top: 20px;
+      }
     }
 
     @media screen and (min-width: $desctop) {
       flex-basis: 25%;
+      margin: 33px 0 14px;
+
+      &:nth-child(4),
+      &:last-child {
+        margin: 33px 0 14px;
+      }
     }
   }
 }
@@ -257,6 +302,10 @@
 
   @media screen and (min-width: $tablet) {
     margin: 46px 0 59px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin: 40px 0 59px;
   }
 }
 
@@ -313,8 +362,8 @@
     display: none;
 
     @media screen and (min-width: $tablet) {
-      width: 22px;
-      height: 22px;
+      width: 24px;
+      height: 24px;
     }
   }
 
@@ -359,6 +408,10 @@
 
   @media screen and (min-width: $tablet) {
     height: 54px;
+  }
+
+  @media screen and (min-width: $desctop){
+    padding-left: 80px;
   }
 
   &::before {
@@ -429,7 +482,13 @@
 
   &--mb {
     @media screen and (min-width: $tablet) {
-      margin-bottom: 52px;
+      margin-bottom: 56px;
+    }
+  }
+
+  &--ml {
+    @media screen and (min-width: $desctop) {
+      margin-left: 80px;
     }
   }
 

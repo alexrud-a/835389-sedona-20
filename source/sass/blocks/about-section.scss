@@ -48,6 +48,10 @@
 
   @media screen and (min-width: $tablet) {
     margin: 30px 0 13px;
+
+    br {
+      display: block;
+    }
   }
 
   &--form {
