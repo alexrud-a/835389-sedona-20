@@ -58,18 +58,22 @@
 
   @media screen and (min-width: $tablet) {
     flex-basis: 33.3333%;
-    padding: 32px 33px 52px;
+    padding: 32px 40px 30px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding: 32px 40px 50px;
   }
 
   &--accent {
     background: $blue;
     color: $white;
-    padding: 34px 14px 27px;
+    padding: 31px 14px 30px;
     display: flex;
     flex-direction: column;
 
     @media screen and (min-width: $tablet) {
-      padding: 7px 14px 27px;
+      padding: 26px 32px 27px;
     }
 
     @media screen and (min-width: $desctop) {
@@ -93,6 +97,10 @@
       display: flex;
       padding: 62px 4px 34px;
       align-items: flex-start;
+    }
+
+    @media screen and (min-width: $desctop) {
+      padding: 62px 4px 56px;
     }
   }
 
@@ -191,10 +199,18 @@
 
   @media screen and (min-width: $tablet) {
     margin: 10px 0 13px;
-    max-width: 290px;
+    max-width: 230px;
 
     br {
       display: block;
+    }
+
+    @media screen and (min-width: $desctop) {
+      max-width: 290px;
+
+      br {
+        display: none;
+      }
     }
   }
 }

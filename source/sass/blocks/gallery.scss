@@ -89,12 +89,17 @@
 
   @media screen and (min-width: $desctop) {
     color: $white;
-    line-height: 35px;
+    line-height: 12px;
+    margin-top: 21px;
   }
 }
 
 .gallery__item-autor {
   line-height: 14px;
+
+  @media screen and (min-width: $desctop) {
+    line-height: 26px;
+  }
 }
 
 .gallery__item-likes {
@@ -102,10 +107,23 @@
 
   @media screen and (min-width: $tablet) {
     position: absolute;
-    right: 21px;
-    top: 50%;
     transform: translateY(-50%);
     margin: 0;
+    right: 30px;
+    top: 54%;
+
+    &--first {
+      @media screen and (min-width: $tablet) {
+        right: 21px;
+        top: 51%;
+      }
+    }
+
+    &--third {
+      @media screen and (min-width: $tablet) {
+        right: 37px;
+      }
+    }
   }
 }
 
@@ -117,6 +135,10 @@
   svg {
     opacity: 0.3;
     margin-right: 16px;
+
+    @media screen and (min-width: $tablet) {
+      margin-right: 9px;
+    }
 
     @media screen and (min-width: $desctop) {
       opacity: 1;

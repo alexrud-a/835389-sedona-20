@@ -53,6 +53,10 @@
 
   @media screen and (min-width: $tablet) {
     margin: 38px 0;
+
+    br {
+      display: block;
+    }
   }
 
   @media screen and (min-width: $desctop) {

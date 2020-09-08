@@ -101,13 +101,19 @@
 
 .player__btn-range {
   position: absolute;
-  width: 13px;
-  height: 13px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background-color: $white;
-  border: none;
-  top: -5px;
-  left: 0;
+  background-color: #fff;
+  border: 0;
+  top: -3px;
+  left: 40px;
+  padding: 0;
+
+  @media screen and (min-width: $tablet) {
+    top: -4px;
+    left: 120px;
+  }
 }
 
 .player__btn {
