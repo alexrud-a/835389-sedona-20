@@ -22,6 +22,14 @@
   }
 }
 
+.advantage__br {
+  display: none;
+
+  @media screen and (min-width: $desctop) {
+    display: block;
+  }
+}
+
 .advantage__item {
   background-color: $bg-light;
   padding: 15px 33px 24px;
@@ -140,6 +148,14 @@
   @media screen and (min-width: $tablet) {
     margin: 10px 0 15px;
   }
+
+  &--small {
+    @media screen and (min-width: $desctop) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 170px;
+    }
+  }
 }
 
 .advantage__item-text {
@@ -205,11 +221,34 @@
       display: block;
     }
 
+    .advantage__br {
+      display: none;
+    }
+
     @media screen and (min-width: $desctop) {
       max-width: 290px;
 
       br {
         display: none;
+      }
+
+      .advantage__br {
+        display: block;
+      }
+    }
+  }
+
+  &--big {
+    @media screen and (min-width: $desctop) {
+      max-width: 305px;
+      width: 100%;
+    }
+  }
+
+  &--br {
+    @media screen and (min-width: $desctop) {
+      br {
+        display: block;
       }
     }
   }
