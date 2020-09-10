@@ -1,0 +1,21 @@
+.footer-develop__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover svg {
+    fill: $blue;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+.footer-develop__text {
+  font-size: 14px;
+  line-height: 26px;
+  color: $black;
+  text-transform: uppercase;
+  margin-right: 10px;
+}

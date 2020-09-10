@@ -24,6 +24,10 @@
   @media screen and (min-width: $tablet) {
     display: none;
   }
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .nav__toogle--close {

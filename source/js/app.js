@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var nav = document.querySelector('.nav-js');
     var toggle = document.querySelector('.toogle-js');
     nav.classList.remove('header__nav--open');
+    toggle.classList.remove('nav__toogle--nojs');
     toggle.classList.remove('nav__toogle--open');
     toggle.classList.add('nav__toogle--close');
 

@@ -23,7 +23,7 @@
       </a>
     </div>
     <div class="header__nav nav nav-js header__nav--open">
-      <button class="nav__toogle nav__toogle--open toogle-js">
+      <button class="nav__toogle nav__toogle--open toogle-js nav__toogle--nojs">
         <span>Меню</span>
       </button>
       <div class="nav__menu-wrap">
@@ -71,7 +71,7 @@
     <section class="gallery">
       <h2 class="hidden">Галерея</h2>
       <div class="gallery__item">
-        <div class="gallery__item-img">
+        <a href="img/photo-sunset-desktop@1x.jpg" class="gallery__item-img">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
@@ -80,7 +80,7 @@
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
             <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="sunset" width="280">
           </picture>
-        </div>
+        </a>
         <div class="gallery__item-meta">
           <div class="gallery__item-title">
             Неродные просторы
@@ -99,7 +99,7 @@
         </div>
       </div>
       <div class="gallery__item">
-        <div class="gallery__item-img">
+        <a href="img/photo-cactus-desktop@1x.jpg" class="gallery__item-img">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
@@ -108,7 +108,7 @@
             <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
             <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="cactus" width="280">
           </picture>
-        </div>
+        </a>
         <div class="gallery__item-meta">
           <div class="gallery__item-title">
             Местная растительность
@@ -127,7 +127,7 @@
         </div>
       </div>
       <div class="gallery__item">
-        <div class="gallery__item-img">
+        <a href="img/photo-roads-desktop@1x.jpg" class="gallery__item-img">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
@@ -136,7 +136,7 @@
             <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
             <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="roads" width="280">
           </picture>
-        </div>
+        </a>
         <div class="gallery__item-meta">
           <div class="gallery__item-title">
             Дорога на север
@@ -155,7 +155,7 @@
         </div>
       </div>
       <div class="gallery__item">
-        <div class="gallery__item-img">
+        <a href="img/photo-bridge-desktop@1x.jpg" class="gallery__item-img">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
@@ -164,7 +164,7 @@
             <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg 2x">
             <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="bridge" width="280">
           </picture>
-        </div>
+        </a>
         <div class="gallery__item-meta">
           <div class="gallery__item-title">
             Мост дьявола
@@ -197,21 +197,21 @@
         <div class="player__control">
           <div class="player__control-block">
             <div class="player__range-slider">
-              <button type="button" class="player__btn-range"></button>
+              <button type="button" class="player__btn-range" aria-label="Перемотать видео"></button>
             </div>
           </div>
           <div class="player__control-block player__control-block--light">
-            <button type="button" class="player__btn player__btn--reset">
+            <button type="button" class="player__btn player__btn--reset" aria-label="Воспроизвести видео с начала">
               <svg width="16" height="20">
                 <use href="img/sprite.svg#icon-video-replay"></use>
               </svg>
             </button>
-            <button type="button" class="player__btn player__btn--quality">
+            <button type="button" class="player__btn player__btn--quality"  aria-label="Открыть субтитры к видео">
               <svg width="32" height="20">
                 <use href="img/sprite.svg#icon-video-subtitles"></use>
               </svg>
             </button>
-            <button type="button" class="player__btn player__btn--size">
+            <button type="button" class="player__btn player__btn--size" aria-label="Открыть видео на весь экран">
               <svg width="32" height="20">
                 <use href="img/sprite.svg#icon-video-fullscreen"></use>
               </svg>
